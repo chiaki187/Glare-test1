@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <script type="module" crossorigin src="./assets/index-BY3OHqir.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-mLfuq0rK.css">
+</head>
+<body>
+
+
+  <h1>グレア調整</h1>
+  <!--画面を縦に二つに分けて表示する-->
+  <div class="container">
+    <!--左側-->
+    <div class="left">
+      <div id="box" class="box">
+        <div class="star">
+          <div id="center-circle" class="center-circle"></div>
+          <div id="glare" class="glare"></div>
+          <div id="secondGlare" class="secondGlare"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--右側-->
+    <div class="right">
+      <label>背景カラー
+        <input id="backColorPicker" type="color">
+      </label>
+      <label>中心カラー
+        <input id="centerColorPicker" type="color" value="#FFFFFF">
+      </label>
+
+      <label>
+        <input id="checkbox" type="checkbox">
+      </label>
+
+      <label>半径:
+        <input type="range" id="radius" min="100" max="500" value="400">
+      </label>
+
+      <label>グレアカラー
+        <input id="colorPicker" type="color" value="#FFFFFF">
+      </label>
+
+      <label>透明度:
+        <input type="range" id="alpha" min="0" max="100" value="100">
+      </label>
+
+
+
+
+      <label style="margin-top: 1rem;">グレア２個目
+      </label>
+
+        
+        <!--もし二個目を表示するときの要素-->
+     
+
+          <label >半径:
+            <input type="Range" id="secondRadius" min="100" max="400" value="300">
+          </label>
+
+          <label>グレアカラー
+            <input id="secondColorPicker" type="color" value="#ffffff">
+          </label>
+
+          <label>透明度:
+            <input type="Range" id="secondAlpha" min="0" max="100" value="100">
+          </label>
+              
+     
+
+    </div>
+  </div> 
+
+   <h1>離散的に試す</h1>
+
+  <label>数:
+    <input type="Range" id="num" min="1" max="600" value="1">
+  </label>
+
+  <label>サイズ:
+    <input type="Range" id="size" min="1" max="50" value="5">
+  </label>
+
+
+  <div style="margin-top :2rem;" id="sky" class="box">
+   <!--- <div class="dCenter-circle"></div>-->
+    <template id="tmplate">
+      <div class="star">
+        <div class="center-circle"></div>
+        <div class="glare"></div>
+        <div class="secondGlare"></div>
+      </div>
+    </template>
+  </div>
+ 
+
+
+
+  
+  <h1>粒でグレアを再現できるのか</h1>
+
+  <div style="margin-top :2rem;" class="container">
+    <div class="left">
+       <div id="box2" class="box">
+        <div id="dCenter-circle" class="dCenter-circle"></div>
+      </div>
+    </div>
+    <div class="right">
+      <label>数:
+        <input type="range" id="dNum" min="1" max="2000" value="100">
+      </label>
+
+      <label>色:
+        <input type="color" id="dColor" value="#ffffff">
+      </label>
+
+      <label>サイズ:
+        <input type="range" id="dSize" min="2" max="20" value="6">
+      </label>
+    </div>
+  </div>
+
+  
+
+ 
+
+
+
+ 
+  
+
+ 
+</body>
+</html>
